@@ -19,7 +19,7 @@ class Dagger(Weapon):
 
 class Sword(Weapon):
     """Stronger melee weapon."""
-    def __init__(self, name: str = "Sword", damage: int = 4) -> None:
+    def __init__(self, name: str = "Sword", damage: int = 8) -> None:
         super().__init__(name, damage)
 
     def __str__(self) -> str:

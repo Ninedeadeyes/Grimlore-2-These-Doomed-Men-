@@ -16,7 +16,7 @@ def press_enter()->None:
 
 def intro() -> None:
     animations.intro_animation()
-    print("The castle has been breached, your home village is burning, and your King is dead. The kingdom has fallen...                 ")
+    print("The castle has been breached, your home village is burning, and the King has locked himself away. The kingdom has fallen...                 ")
     art.castle1()
     press_enter()
     print("Yet you stand with a heavy heart and unbridled rage.           ")
