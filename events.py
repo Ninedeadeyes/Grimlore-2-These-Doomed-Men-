@@ -21,8 +21,11 @@ nothing_list: List[str] = [
 ]
 
 def win() -> None:
-    """Trigger the win animation and end the game."""
-    print("You win!")
+    print("\033[H\033[J", end="")
+    sound.play_background_music("Music/win_music")
+    print("You have defeated the Mad King ")
+    print("At least vengeance has been served")
+    print("You fight the endless horde until you fall yourself ")
     print("GAME OVER")
     input("Press enter to exit")
     sys.exit()
@@ -104,11 +107,46 @@ def loot(player: Player) -> None:
     else:
         print(f"You find {gold_pickup} gold coins on the floor")
         
-def goblin(player: Player) -> None:
+def horde(player: Player) -> None:
+    print("You stand against the endless horde.. How futile.. ")
+    input("Press enter to continue")
     battle.fight(player, enemy.Hobgoblin())
 
+def mad_king(player: Player) -> None:
+    print("My Kingdom for eternal life, a fair trade")
+    print("Now prepare to die !!")
+    input("Press enter to continue")
+    battle.fight(player, enemy.MadKing())
+    player.victory=True
 
-def captain(player: Player) -> None:
+    if player.victory==True:
+        print("The King falls down to the ground ")
+        print("He mutters as his mortal coil ends 'It was all for nothing..' ")
+        input("Press enter to continue")
+        win()
+
+
+def key_found(player: Player) -> bool:
+    """Handle the event where the player finds a spoon."""
+    print("You find a key on the floor. Do you pick it up (Y or N)?")
+
+    while True:
+        decision = msvcrt.getch()
+
+        if decision in {b'y', b'Y'}:
+            print("You pick up the key")
+            player.got_key_for_quest = True
+            player.inventory.append("key")
+            input("Press enter to continue")
+            return True
+            
+        if decision in {b'n', b'N'}:
+            print("You decide to leave it")
+            input("Press enter to continue")
+            return False
+
+
+def sword_found(player: Player) -> None:
     print("You see your dying Captain with a sword impaled through his belly")
     print("He cries for help as he chokes on his own blood")
     print("Do you remove the sword ? ( Yes (Y) or No (No)) ")
@@ -117,11 +155,14 @@ def captain(player: Player) -> None:
         decision = msvcrt.getch()
 
         if decision in {b'y', b'Y'}:
-            print("You remove the sword through his ")
-            player.got_spoon_for_quest = True
-            player.inventory.append("Spoon")
+            print("You remove the sword from his stomach, and he dies")
+            print("You gain a Sword")
+            input("Press enter to continue")
+            player.got_captain_sword = True
+            player.inventory.append(weapon.Sword())
             return True
             
         if decision in {b'n', b'N'}:
-            print("You decide to leave it")
+            print("You decide against the idea, as it will mean certain death for him ")
+            input("Press enter to continue")
             return False

@@ -17,10 +17,11 @@ def fight(player: Player, enemy: Enemy) -> None:
     print("\033c", end="")
     battle = True
     print("An enemy appears, ready to fight")
+    
 
     
     while battle:
-      
+        
         print(f"{enemy.name} hp:{enemy.health} Power:{enemy.power}")
         print(" " * 100) # Simplified long empty strings
         print(f"Player hp:{player.health} Power:{player.power} Rage:{player.rage}")
@@ -79,7 +80,7 @@ def fight(player: Player, enemy: Enemy) -> None:
 
                         if choice in {b'p', b'P'}:
                             if player.rage>=3:
-                                player_dice_roll = random.randint(10, 20)
+                                player_dice_roll = random.randint(15, 25)
                                 print("You deliver a powerful blow")
                                 player.rage-=3
                             else:
@@ -90,7 +91,7 @@ def fight(player: Player, enemy: Enemy) -> None:
 
                         if choice in {b'f', b'F'}:
                             if player.rage>=6:
-                                player_dice_roll = random.randint(20, 30)
+                                player_dice_roll = random.randint(30, 55)
                                 print("You unleash a brutal flurry of attacks ")
                                 player.rage-=6
                             else:

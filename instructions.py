@@ -22,10 +22,10 @@ def play_instruction() -> None:
 def commands(player: Player) -> None:
     """Handle player input for movement, inventory, and equipment."""
     print("                                   ")
-    print("                                    ")
+    print("                                   ")
     print(f" Level:{player.level} Health: {player.health} Power: {player.power} Gold: {player.gold}")
     print(f" Armour: {player.armour.name} + {player.armour.protection} Protection    Weapon: {player.weapon.name} + {player.weapon.damage} Damage")
-
+    print(" (Movement: WASD, Inventory: I) Action:")  
     while True:        # ignores all non instruction keypress 
         instruction = msvcrt.getch()
 

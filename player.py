@@ -22,14 +22,14 @@ class Player:
         self.health: int = health
         self.full_health: int = 100
         self.power: int = power
-        self.full_power: int = 12
+        self.full_power: int = 10
         self.gold: int = gold
         self.rage: int=0
+        self.victory=False
 
         # Position
         self.x: int = x
         self.y: int = y
 
         # Quests
-        self.spoon_quest: bool = False
-        self.got_spoon_for_quest: bool = False
+        self.got_key_for_quest: bool = False
