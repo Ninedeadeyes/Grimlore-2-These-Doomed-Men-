@@ -1,5 +1,5 @@
 Markdown
-# ⚔️ Grimlore 2 These Doomed Men 1.0 
+# ⚔️ Grimlore 2 : These Doomed Men 1.0 
 
 A dark fantasy mini dungeon crawler RPG built to showcase the features and capabilities of the **S.P.A.R.K.** 2D RPG game engine.
 
