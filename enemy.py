@@ -29,7 +29,7 @@ class Abomination(Enemy):
         super().__init__(name, power, health, exp, gold)
 
 class Troll(Enemy):
-    def __init__(self, name: str = "Demon Troll", power: int = 12, health: int = 150, exp: int = 40, gold: int = 40) -> None:
+    def __init__(self, name: str = "Demon Troll", power: int = 14, health: int = 180, exp: int = 50, gold: int = 40) -> None:
         super().__init__(name, power, health, exp, gold)
 
 class ShadowBeast(Enemy):
@@ -37,5 +37,5 @@ class ShadowBeast(Enemy):
         super().__init__(name, power, health, exp, gold)
 
 class MadKing(Enemy):
-    def __init__(self, name: str = "Dead End King", power: int = 25, health: int = 666, exp: int = 100, gold: int = 100) -> None:
+    def __init__(self, name: str = "Dead End King", power: int = 20, health: int = 666, exp: int = 100, gold: int = 100) -> None:
         super().__init__(name, power, health, exp, gold)
