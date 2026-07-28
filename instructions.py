@@ -23,9 +23,9 @@ def commands(player: Player) -> None:
     """Handle player input for movement, inventory, and equipment."""
     print("                                   ")
     print("                                   ")
-    print(f" Level:{player.level} Health: {player.health} Power: {player.power} Gold: {player.gold}")
-    print(f" Armour: {player.armour.name} + {player.armour.protection} Protection    Weapon: {player.weapon.name} + {player.weapon.damage} Damage")
-    print(" (Movement: WASD, Inventory: I) Action:")  
+    print(f" Level:{player.level} Health: {player.health} Power: {player.power+player.weapon.damage} Rage:{player.rage} Gold: {player.gold}")
+    print(f" Armour: {player.armour.name} + {player.armour.protection} Protect  Weapon: {player.weapon.name} + {player.weapon.damage} Damage")
+    print(" ( Movement: WASD, Inventory: I ) ")  
     while True:        # ignores all non instruction keypress 
         instruction = msvcrt.getch()
 
@@ -78,7 +78,7 @@ def commands(player: Player) -> None:
                                 print("Press E for Exit")
                                 break
 
-                            print(" Choose a Weapon to equip :")
+                            print(" Choose a Weapon to equip (Press Enter after selection) :")
                             for i, item in enumerate(Weapons, 1):
                                 print(f"{i}. {item}")
 
@@ -109,7 +109,7 @@ def commands(player: Player) -> None:
                                 print("Press E for Exit")
                                 break
 
-                            print(" Choose an Armour to equip :")
+                            print(" Choose an Armour to equip (Press Enter after selection) : ")
                             for i, item in enumerate(Armours, 1):
                                 print(f"{i}. {item}")
 

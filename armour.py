@@ -11,13 +11,18 @@ class Armour:
         return self.name
 
 
-class Rags(Armour):
+class LeatherTunic(Armour):
     """Basic starter armour with minimal protection."""
-    def __init__(self, name: str = "Rags", protection: int = 1) -> None:
+    def __init__(self, name: str = "Leather Tunic", protection: int = 1) -> None:
         super().__init__(name, protection)
 
 
-class LeatherTunic(Armour):
+class ChainMail(Armour):
     """Light armour offering slightly better protection."""
-    def __init__(self, name: str = "Leather Tunic", protection: int = 2) -> None:
+    def __init__(self, name: str = "Chain Mail", protection: int = 3) -> None:
+        super().__init__(name, protection)
+
+class HolyMail(Armour):
+    """Light armour offering slightly better protection."""
+    def __init__(self, name: str = "Holy Plate", protection: int = 8) -> None:
         super().__init__(name, protection)

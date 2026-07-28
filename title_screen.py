@@ -3,12 +3,6 @@ import animations
 import art
 
 
-def title() -> None:
-    print("                                           These Doomed Men                         ")
-    print("                                                                                     ")
-    print("                                                                                     ")
-
-
 def press_enter()->None:
     print("                                                                 ")
     input("                                   press enter to continue")
@@ -16,14 +10,14 @@ def press_enter()->None:
 
 def intro() -> None:
     animations.intro_animation()
-    print("The castle has been breached, your home village is burning, and the King has locked himself away. The kingdom has fallen...                 ")
+    print("The castle has been breached, your home village is burning, and the King is gone. The Kingdom has fallen...                 ")
     art.castle1()
     press_enter()
-    print("Yet you stand with a heavy heart and unbridled rage.           ")
+    print("Yet you stand with a heavy heart and unbridled rage as you move towards the battleground...  ")
     print("                                 ")
     art.castle2()
     press_enter()
-    print("You march toward the cries of comrades who have yet to fall, knowing you will always be too late   ")
+    print("You march toward the cries of comrades who have yet to fall, knowing you will always be too late...   ")
     print("                                 ")
     art.castle3()
     press_enter()
@@ -32,6 +26,6 @@ def intro() -> None:
     art.castle4()
     press_enter()
     animations.loading_animation()
-    print("Loading Complete")
+    print("Loading complete")
     input("Press enter to continue ")
 

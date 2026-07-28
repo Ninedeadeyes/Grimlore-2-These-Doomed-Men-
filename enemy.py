@@ -1,6 +1,5 @@
 from __future__ import annotations
 
-
 class Enemy:
     """Base enemy class storing stats and rewards."""
 
@@ -11,27 +10,32 @@ class Enemy:
         self.exp: int = exp
         self.gold: int = gold
 
-
 # Random Event enemies 
 
-class Ratling(Enemy):
-    """Weak rat‑creature enemy."""
-    def __init__(self, name: str = "Ratling", power: int = 4, health: int = 40, exp: int = 5, gold: int = 25) -> None:
+class Undead(Enemy):
+    def __init__(self, name: str = "Undead", power: int = 5, health: int = 40, exp: int = 5, gold: int = 10) -> None:
         super().__init__(name, power, health, exp, gold)
 
-
-class BogImp(Enemy):
-    """Small swamp imp enemy."""
-    def __init__(self, name: str = "Bog Imp", power: int = 5, health: int = 60, exp: int = 7, gold: int = 30) -> None:
+class Cultist(Enemy):
+    def __init__(self, name: str = "Cultist", power: int = 6, health: int = 60, exp: int = 7, gold: int = 15) -> None:
         super().__init__(name, power, health, exp, gold)
 
+class DoomKnight(Enemy):
+    def __init__(self, name: str = "Doom Knight", power: int = 7, health: int = 80, exp: int = 10, gold: int = 20) -> None:
+        super().__init__(name, power, health, exp, gold)
 
-class Hobgoblin(Enemy):
-    """Stronger goblinoid enemy."""
-    def __init__(self, name: str = "HobGoblin", power: int = 6, health: int = 80, exp: int = 10, gold: int = 35) -> None:
+class Abomination(Enemy):
+    def __init__(self, name: str = "Abomination", power: int = 8, health: int = 120, exp: int =15, gold: int = 30) -> None:
+        super().__init__(name, power, health, exp, gold)
+
+class Troll(Enemy):
+    def __init__(self, name: str = "Demon Troll", power: int = 12, health: int = 150, exp: int = 40, gold: int = 40) -> None:
+        super().__init__(name, power, health, exp, gold)
+
+class ShadowBeast(Enemy):
+    def __init__(self, name: str = "Beast from the Shadows", power: int = 16, health: int = 80, exp: int = 40, gold: int = 35) -> None:
         super().__init__(name, power, health, exp, gold)
 
 class MadKing(Enemy):
-    """Mad King."""
-    def __init__(self, name: str = "Mad King", power: int = 12, health: int = 150, exp: int = 5, gold: int = 25) -> None:
+    def __init__(self, name: str = "Dead End King", power: int = 25, health: int = 666, exp: int = 100, gold: int = 100) -> None:
         super().__init__(name, power, health, exp, gold)
