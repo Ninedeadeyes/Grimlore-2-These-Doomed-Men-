@@ -1,4 +1,19 @@
-# Grimlore-2-These-Doomed-Men-
-A Tech demo for my 2D RPG game engine S.P.A.R.K.  
+Markdown
+# ⚔️ S.P.A.R.K. Tech Demo
 
-It is a 10 to 15 minutes Mini Dungeon Crawler RPG which demonstrate an array of features of what the engine is capable off.. I might or might not continue working on it but at the moment it is at a playable state from start to finish. 
+A dark fantasy mini dungeon crawler RPG built to showcase the features and capabilities of the **S.P.A.R.K.** 2D RPG game engine.
+
+---
+
+### 📋 Overview
+- **Genre:** Dark Fantasy / Mini Dungeon Crawler RPG 
+- **Playtime:** 10 – 15 minutes
+- **Platform Requirements:** Windows 10 or later
+- **Purpose:** Demonstrates what the S.P.A.R.K. 2D RPG game engine is capable of.
+
+---
+
+### 🛠️ Powered by S.P.A.R.K.
+This project was built using the **S.P.A.R.K. (Standard Python ASCII RPG Kit)** engine.
+
+🔗 **[View the S.P.A.R.K. Engine Repository on GitHub](https://github.com/Ninedeadeyes/S.P.A.R.K--Standard-Python-ASCII-RPG-Kit-)*
