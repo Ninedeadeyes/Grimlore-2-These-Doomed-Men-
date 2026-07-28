@@ -17,8 +17,7 @@ def fight(player: Player, enemy: Enemy) -> None:
     print("\033c", end="")
     battle = True
     print("An enemy appears, ready to fight")
-    
-
+    player.escaped=False
     
     while battle:
         
@@ -73,14 +72,14 @@ def fight(player: Player, enemy: Enemy) -> None:
                 while True:
                     while True:
                         print("Rage Attacks")
-                        print("Power Blow(3 Rage):(P)")
+                        print("Power Blow(3 Rage):(R)")
                         print("Frenzy(6 Rage):(F)")
                         
                         choice = msvcrt.getch()
 
-                        if choice in {b'p', b'P'}:
+                        if choice in {b'r', b'R'}:
                             if player.rage>=3:
-                                player_dice_roll = random.randint(15, 25)
+                                player_dice_roll = random.randint(10, 16)
                                 print("You deliver a powerful blow")
                                 player.rage-=3
                             else:
@@ -91,7 +90,7 @@ def fight(player: Player, enemy: Enemy) -> None:
 
                         if choice in {b'f', b'F'}:
                             if player.rage>=6:
-                                player_dice_roll = random.randint(30, 55)
+                                player_dice_roll = random.randint(20,40)
                                 print("You unleash a brutal flurry of attacks ")
                                 player.rage-=6
                             else:
@@ -147,6 +146,7 @@ def fight(player: Player, enemy: Enemy) -> None:
                     print("You manage to escape")
                     input("Press enter to continue")
                     battle = False
+                    player.escaped=True
                     break
                      
                 else:
