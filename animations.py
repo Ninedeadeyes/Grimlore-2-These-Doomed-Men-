@@ -640,3 +640,93 @@ def rip():
                                                                                                     
         time.sleep(.5)
         clear()   
+
+def ending():
+
+    clear()
+    loop=0
+    while loop<4:
+        loop+=1
+
+        print("""                     
+
+
+        
+
+
+
+                                       
+                        xx             xx xx             xx xx             xx
+                         x             x   x             x   x             x 
+                        xx             xx xx             xx xx             xx    
+                                        
+                                                                    
+                              xxxxx     xxxxx     xxxxx     xxxxx      xx
+                              xxxxx     xxxxx     xxxxx     xxxxx      xx
+                            x    xx        xx   x    xx    x   xx 
+                              x xxx     x xxx x   x xxx x    x xxxx     x
+                                 xx x  x   xx    x   xx  x     xx x 
+                                 xx        xx        xx        xx 
+                                x  x      x  x      x  x     x  x
+                                x   x    x    x     x   x   x    x
+                      dddddddddddddddddddddddddddddddddddddddddddddddddddddd                                       
+                     
+                   """)
+        time.sleep(.4)
+        clear()
+
+        print("""   
+
+
+        
+
+
+                                        
+                                       
+                        xx             xx xx             xx xx             xx
+                         x             x   x             x   x             x 
+                        xx             xx xx             xx xx             xx    
+                                        
+                                                                  
+                          xxxxx     xxxxx     xxxxx    xxxxx      xxxx
+                          xxxxx     xxxxx     xxxxx    xxxxx      xxxx
+                             xx        xx    x   xx  x    xx         x
+                        x x xxx   x x xxx     x xxx x     xxxx     x x 
+                             xx x      xx        xx     x xx  x      x   
+                             xx      x xx        xx       xx         x
+                            x  x      x  x      x  x     x  x        x
+                          x    x     x   x     x   x    x    x      x
+                      ddddddddddddddddddddddddddddddddddddddddddddddddddddddd                                       
+                      
+                   """)
+        time.sleep(.4)
+        clear()
+
+
+
+        print("""   
+
+
+        
+
+        
+                                        
+                                       
+                        xx             xx xx             xx xx             xx
+                         x             x   x             x   x             x 
+                        xx             xx xx             xx xx             xx    
+                                        
+                                                                  
+                          xxx     xxxxx     xxxxx     xxxxx      xxxxx
+                          xxx     xxxxx     xxxxx     xxxxx      xxxxx
+                           xx    x   xx    x   xx  x     xx         xx
+                          xxx     x xxx     x xxx x      xxxx     x xx
+                           xx x      xx        xx      x xx x       xx x  
+                           xx      x xx        xx        xx         xx
+                          x  x      x  x     x  x       x  x        x  x
+                          x   x     x  x     x   x      x    x     x    x 
+                      ddddddddddddddddddddddddddddddddddddddddddddddddddddddd                                       
+                      
+                   """)
+        time.sleep(.4)
+        clear()

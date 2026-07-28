@@ -9,6 +9,7 @@ import enemy
 import sys
 import animations
 import sound
+import time
 
 if TYPE_CHECKING:
     from player import Player
@@ -25,8 +26,11 @@ def win() -> None:
     sound.play_background_music("Music/win_music")
     print("You have defeated the Mad King... Kingslayer.")
     print("Vengeance has been dealt, yet your heart remains cold.")
-    print("You fight the endless horde until the darkness consumes all.")
-    print("But until then, death will not take you easily.. ")
+    print("You fight the endless horde, waiting for the darkness to consume all.")
+    input("Press enter to continue your struggle")
+    animations.ending()
+    print("The darkness consumes... ")
+    time.sleep(2)
     print("GAME OVER")
     input("Press enter to exit")
     sys.exit()
