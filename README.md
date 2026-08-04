@@ -13,7 +13,7 @@ A dark fantasy mini dungeon crawler RPG built to showcase the features and capab
 
 ---
 
-<img width="1076" height="562" alt="Screenshot 2026-08-04 204120" src="https://github.com/user-attachments/assets/d50a1eae-100c-4fbe-8458-8ca0b8b2a35b" />
+<img width="700" height="562" alt="Screenshot 2026-08-04 204120" src="https://github.com/user-attachments/assets/d50a1eae-100c-4fbe-8458-8ca0b8b2a35b" />
 
 ### 🛠️ Powered by S.P.A.R.K.
 This project was built using the **S.P.A.R.K. (Standard Python ASCII RPG Kit)** engine.
